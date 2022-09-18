@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.allinoneapplication">
+    package="com.example.automobile">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,103 +17,73 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.AllInOneApplication">
+        android:theme="@style/Theme.AllInOneApplication"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".customer.ViewPreviousWorkActivity"
+            android:name="com.example.automobile.customer.ViewPreviousWorkActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ViewFeedbackReportActivity"
+            android:name="com.example.automobile.admin.ViewFeedbackReportActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.WorkshopReportActivity"
+            android:name="com.example.automobile.admin.WorkshopReportActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ViewComplainReportActivity"
+            android:name="com.example.automobile.admin.ViewComplainReportActivity"
             android:exported="false" />
         <activity
-            android:name=".customer.CancelBookingActivity"
+            android:name="com.example.automobile.admin.ViewBookingReportActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ViewBookingReportActivity"
+            android:name="com.example.automobile.tracking.TrackingActivity"
             android:exported="false" />
         <activity
-            android:name=".tracking.TrackingActivity"
+            android:name="com.example.automobile.admin.ViewCustomerReportActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ViewCustomerReportActivity"
+            android:name="com.example.automobile.admin.MechanicReportsActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.MechanicReportsActivity"
+            android:name="com.example.automobile.admin.ReportsActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ReportsActivity"
+            android:name="com.example.automobile.workshop.ManageWorkshopBookingDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".customer.CustomerBillActivity"
+            android:name="com.example.automobile.workshop.ManageMechanicBookingsActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.BillActivity"
+            android:name="com.example.automobile.workshop.UpdateLocationWorkshopMActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.ManageWorkshopBookingDetailsActivity"
+            android:name="com.example.automobile.workshop.SelectedWorkshopMechanicFurtherDetails"
             android:exported="false" />
         <activity
-            android:name=".workshop.ManageMechanicBookingsActivity"
+            android:name="com.example.automobile.ui.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.UpdateLocationWorkshopMActivity"
+            android:name="com.example.automobile.admin.AdminEditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.SelectedWorkshopMechanicFurtherDetails"
+            android:name="com.example.automobile.workshop.WorkshopMechanicProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".customer.SelectedWorkshopMechanicActivity"
+            android:name="com.example.automobile.mechanic.MechanicProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".customer.CustomerFavouriteActivity"
+            android:name="com.example.automobile.customer.UserProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.AboutActivity"
+            android:name="com.example.automobile.nearbyareas.SelectedPlaceDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.AdminEditProfileActivity"
+            android:name="com.example.automobile.admin.AdminAllComplainActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.WorkshopMechanicProfileActivity"
+            android:name="com.example.automobile.complain.ComplainActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.MechanicProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".customer.UserProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".nearbyareas.SelectedPlaceDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".rating.RateUsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".complain.CusMechComplaintDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".admin.AdminAllComplainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".complain.ComplainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".chatting.ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".customer.CustomerMechBookingDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".mechanic.UpdateServiceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.MainActivity"
+            android:name="com.example.automobile.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -122,95 +92,91 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".customer.CustomerHistoryTabLayout"
+            android:name="com.example.automobile.workshop.WorkshopDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.SelectBookingDetailActivity"
+            android:name="com.example.automobile.admin.ManageWorkshopActivity"
             android:exported="false" />
         <activity
-            android:name=".customer.SelectedWorkshopDetails"
+            android:name="com.example.automobile.admin.SelectedMechanicDetails"
             android:exported="false" />
         <activity
-            android:name=".customer.SelectedMechanicFurtherDetails"
+            android:name="com.example.automobile.admin.ManageMechanicActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.WorkshopDetailActivity"
+            android:name="com.example.automobile.admin.SelectedUserDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ManageWorkshopActivity"
+            android:name="com.example.automobile.admin.ManageUserActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.SelectedMechanicDetails"
+            android:name="com.example.automobile.admin.AddnearbyAreasActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ManageMechanicActivity"
+            android:name="com.example.automobile.ui.SelectLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.SelectedUserDetailActivity"
+            android:name="com.example.automobile.nearbyareas.NearByAreasActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ManageUserActivity"
+            android:name="com.example.automobile.mechanic.MOrderTablayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.AddnearbyAreasActivity"
+            android:name="com.example.automobile.admin.ManageComplainTabLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SelectLocationActivity"
+            android:name="com.example.automobile.workshop.AddMechanicActivity"
             android:exported="false" />
         <activity
-            android:name=".nearbyareas.NearByAreasActivity"
+            android:name="com.example.automobile.workshop.ManageMechanicworkshopActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.MOrderTablayoutActivity"
+            android:name="com.example.automobile.admin.VehicleNameActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.MHistoryTablayoutActivity"
+            android:name="com.example.automobile.admin.ManageVehicleActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ManageComplainTabLayoutActivity"
+            android:name=".mechanic.MechanicDrawerActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.AddMechanicActivity"
+            android:name="com.example.automobile.workshop.WorkshopActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.example.automobile.ui.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".workshop.ManageMechanicworkshopActivity"
+            android:name="com.example.automobile.admin.AdminDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.MechanicservicedialogActivity"
+            android:name="com.example.automobile.ui.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.automobile.tracking.MapDirectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.CusMechComplaintDetailActivity"
             android:exported="false" />
         <activity
             android:name=".mechanic.MechanicServiceActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.VehicleNameActivity"
+            android:name=".mechanic.MechanicservicedialogActivity"
             android:exported="false" />
         <activity
-            android:name=".admin.ManageVehicleActivity"
+            android:name=".mechanic.MHistoryTablayoutActivity"
             android:exported="false" />
-        <activity
-            android:name=".workshop.WorkshopActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".customer.UserDrawerActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".ui.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".mechanic.MechanicDrawerActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".admin.AdminDashboardActivity"
+            android:name=".customer.CustomerHistoryTabLayout"
             android:exported="false" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".customer.CustomerFavouriteActivity"
             android:exported="false" />
-        <activity
-            android:name=".tracking.MapDirectionActivity"
-            android:exported="false" />
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
